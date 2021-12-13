@@ -1,0 +1,15 @@
+C:\Users\ClassUser\source\repos\maket\maket\bin\Debug\maket.exe.config
+C:\Users\ClassUser\source\repos\maket\maket\bin\Debug\maket.exe
+C:\Users\ClassUser\source\repos\maket\maket\bin\Debug\maket.pdb
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.csproj.AssemblyReference.cache
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\MainWindow.g.cs
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\App.g.cs
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket_MarkupCompile.cache
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket_MarkupCompile.lref
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\MainWindow.baml
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.g.resources
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.Properties.Resources.resources
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.csproj.GenerateResource.cache
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.csproj.CoreCompileInputs.cache
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.exe
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.pdb
