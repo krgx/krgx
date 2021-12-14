@@ -5,13 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:maket"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible">
-        <Grid>
-            <Grid.RowDefinitions>
-            </Grid.RowDefinitions>
-        </Grid>
-    </ScrollViewer>
-    
-          
+        Title="MainWindow" Height="6243.824" Width="800">
+
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="400"></RowDefinition>
+            <RowDefinition Height="400"></RowDefinition>
+            <RowDefinition Height="400"></RowDefinition>
+            <RowDefinition Height="400"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150*"></ColumnDefinition>
+            <ColumnDefinition Width="150*" ></ColumnDefinition>
+            <ColumnDefinition Width="150*"></ColumnDefinition>
+            <ColumnDefinition Width="205"></ColumnDefinition>
+            <ColumnDefinition Width="137*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1"
+                    
+                   HorizontalAlignment="Center" Margin="43,32,43,33" Width="64">
+            <Image Source="img/logo.png" Width="64"  />
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="3"
+                    Orientation="Horizontal">
+            <Button BorderBrush="Transparent" 
+                        Background="Transparent" FontFamily="sans-serif"
+                        FontSize="13px" Padding="20px" Content="HOME" FontWeight="Bold"></Button>
+            <Button BorderBrush="Transparent"
+                        Background="Transparent" FontFamily="sans-serif"
+                        FontSize="13px" Padding="20px" Content="ABOUT" FontWeight="Bold"></Button>
+            <Button BorderBrush="Transparent"
+                        Background="Transparent" FontFamily="sans-serif"
+                        FontSize="13px" Padding="20px" Content="WORK" FontWeight="Bold"></Button>
+            <Button BorderBrush="Transparent" 
+                        Background="Transparent" FontFamily="sans-serif"
+                        FontSize="13px" Padding="20px 0px 20px 20px" Content="CONTACT" FontWeight="Bold"/>
+        </StackPanel>
+        <Image Grid.Column="0" x:Name="mainImage">
+            <Image.Source>
+                <FormatConvertedBitmap Source="01.jpg"
+                DestinationFormat="Gray32Float" />
+            </Image.Source>
+        </Image>
+        <StackPanel Grid.Column="1">
+            <Image Source="01.jpg" />
+            <Image Source="2.jpg" />
+            <Image Source="3.jpg" />
+            <Image Source="3.jpg" />
+        </StackPanel>
+    </Grid>
+
+
 </Window>

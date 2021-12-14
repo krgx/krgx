@@ -13,3 +13,5 @@ C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.csproj.GenerateResou
 C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.csproj.CoreCompileInputs.cache
 C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.exe
 C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\maket.pdb
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\Style.baml
+C:\Users\ClassUser\source\repos\maket\maket\obj\Debug\App.baml
