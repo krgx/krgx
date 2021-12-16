@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="2484.824" Width="800">
     <ScrollViewer>
-        <Grid ShowGridLines="True" >
+        <Grid ShowGridLines="False" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="80"></RowDefinition>
                 <RowDefinition Height="483"></RowDefinition>
@@ -16,55 +16,59 @@
                 <RowDefinition Height="1030"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition ></ColumnDefinition>
-                <ColumnDefinition ></ColumnDefinition>
-                <ColumnDefinition ></ColumnDefinition>
-                <ColumnDefinition ></ColumnDefinition>
-                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
+            <!--Лого-->
             <StackPanel Grid.Row="0" Grid.Column="1"
                     
-                   HorizontalAlignment="Center" VerticalAlignment="Center"  Width="64" Height="16" Margin="45,32,46,32">
+                   HorizontalAlignment="Left" VerticalAlignment="Center"  Width="64" Height="16" >
                 <Image Source="img/logo.png" Width="64"  />
             </StackPanel>
+            <!--Навигация-->
             <StackPanel Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" 
                     Orientation="Horizontal" HorizontalAlignment="Right" Width="202">
-                <Button BorderBrush="Transparent" 
+                <Button 
                         Background="Transparent" 
-                    FontFamily="sans-serif"
+                    FontFamily="Segoe UI"
                         FontSize="13px" 
                     Padding="20px" Content="HOME" 
                     FontWeight="Bold"></Button>
-                <Button BorderBrush="Transparent"
+                <Button 
                         Background="Transparent"
-                    FontFamily="sans-serif"
+                    FontFamily="Segoe UI "
                         FontSize="13px"
                     Padding="20px" Content="ABOUT"
                     FontWeight="Bold"></Button>
-                <Button BorderBrush="Transparent"
+                <Button 
                         Background="Transparent"
-                    FontFamily="sans-serif"
+                    FontFamily="Segoe UI"
                         FontSize="13px" Padding="20px" 
                     Content="WORK" FontWeight="Bold"></Button>
-                <Button BorderBrush="Transparent" 
+                <Button  
                         Background="Transparent"
-                    FontFamily="sans-serif"
+                    FontFamily="Segoe UI"
                         FontSize="13px" 
                      Content="CONTACT" FontWeight="Bold"/>
             </StackPanel>
-            <Rectangle Grid.Row="1" Grid.Column="4"
-                       Fill="#FFFBFBFA"></Rectangle>
+            <StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Background="#FFFAFAFA"/>
+            <!--Картинки бомба-->
             <StackPanel  Grid.Row="1" Grid.Column="1" 
                          Grid.ColumnSpan="3"
                          Grid.RowSpan="1"
                          VerticalAlignment="Center"
-                         Height="188"
-                         Margin="0,139,0,156"
+                         Height="380"
+                         
                          >
-                <Image Stretch="UniformToFill" Source="img/11.jpg"  ></Image>
+                <Image Height="300" Width="1100" Stretch="UniformToFill" Source="img/11.jpg"  ></Image>
             </StackPanel>
+            
+            <!--1Арт-->
             <StackPanel Grid.Row="2" Grid.Column="1"  >
-                <StackPanel Orientation="Vertical" >
+                <StackPanel Orientation="Vertical"   >
                     <TextBlock FontSize="19" FontFamily="Segoe UI Semibold" Background="White" Foreground="#515769" >
                     Art Of Coding 
                     </TextBlock>
@@ -82,7 +86,9 @@
                         consequat siad esqudiat dolo
                     </TextBlock>
                 </StackPanel>
+                
             </StackPanel>
+            <!--2Дизайн-->
             <StackPanel Grid.Row="2" Grid.Column="2"  >
                 <StackPanel Orientation="Vertical" >
                     <TextBlock FontSize="19"
@@ -106,7 +112,9 @@
                         consequat siad esqudiat dolo
                     </TextBlock>
                 </StackPanel>
+                
             </StackPanel>
+            <!--3Саппорт-->
             <StackPanel Grid.Row="2" Grid.Column="3">
                 <StackPanel Orientation="Vertical" >
                     <TextBlock FontSize="19" Background="White" Foreground="#515769" FontFamily="Segoe UI Semibold" >
@@ -125,9 +133,20 @@
                     </TextBlock>
                 </StackPanel>
             </StackPanel>
-            <StackPanel Grid.Row="3" Orientation="Horizontal" Grid.Column="1" Grid.ColumnSpan="3">
-                <StackPanel>
-                    <TextBlock FontSize="26"
+            <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5">
+                <Border Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1"/>
+            </Grid>
+
+            <StackPanel Background="#FFFAFAFA"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="5"
+                        Grid.Row="4"/>
+
+            <!--Клиенты-->
+            <StackPanel Grid.Row="3"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="3">
+                <TextBlock FontSize="26"
                                Background="White"
                                Foreground="#515769"
                                FontFamily="Segoe UI Semibold">
@@ -141,9 +160,39 @@
                         <LineBreak/>
                         laboret dolore magna aliqua enim minim veniam exercitation
                     </TextBlock>
-                </StackPanel>
+                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                    <Image Source="img/client/01.png" Margin="0 0 10 0" Height="200" Width="120"></Image>
+                    <Image Source="img/client/02.png" Margin="0 0 10 0" Height="190" Width="120"></Image>
+                    <Image Source="img/client/06.png" Margin="0 0 10 0" Height="190" Width="120"></Image>
+                    <Image Source="img/client/04.png" Margin="0 0 10 0" Height="190" Width="120"></Image>
+                    <Image Source="img/client/05.png"  Margin="0 0 10 0" Height="190" Width="120"></Image>
+                     </StackPanel>
             </StackPanel>
+            <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5">
+                <Border Background="#FFFAFAFA" BorderBrush="#FFFBFBFA">
+                    </Border>
+            </Grid>
+            <StackPanel Grid.Row="4"  Grid.Column="1" Grid.ColumnSpan="3">
+                <TextBlock FontFamily="Segoe UI Semibold"
+                           FontSize="26"
+                           Background="#FFFAFAFA"
+                           Foreground="#515769">
+                    Work
+                </TextBlock>
+                <TextBlock Margin="0 15 0 0"
+                               Foreground="#a6a7aa"
+                               FontSize="11"
+                               FontFamily="Segoe UI Light">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut 
+                        <LineBreak/>
+                        laboret dolore magna aliqua enim minim veniam exercitation
+                </TextBlock>
+            </StackPanel>
+        
+        
+        
         </Grid>
+        
     </ScrollViewer>
 
 </Window>
