@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:maket"
         mc:Ignorable="d"
-        Title="MainWindow" Height="2484.824" Width="800">
+        Title="MainWindow" Height="2484.824" Width="1920">
     <ScrollViewer>
         <Grid ShowGridLines="False" >
             <Grid.RowDefinitions>
@@ -63,30 +63,31 @@
                          Height="380"
                          
                          >
-                <Image Height="300" Width="1100" Stretch="UniformToFill" Source="img/11.jpg"  ></Image>
+                <Image Height="376" Stretch="UniformToFill" Source="img/11.jpg" Margin="0,0,10,0"  />
             </StackPanel>
-            
+
             <!--1Арт-->
             <StackPanel Grid.Row="2" Grid.Column="1"  >
                 <StackPanel Orientation="Vertical"   >
                     <TextBlock FontSize="19" FontFamily="Segoe UI Semibold" Background="White" Foreground="#515769" >
-                    Art Of Coding 
+                    Art Of Coding
                     </TextBlock>
                     <TextBlock Margin="0 15 0 0" Foreground="#a6a7aa"
                                FontSize="12"
                                FontFamily="Segoe UI Light" >
                         Lorem ipsum dolor sit amet
-                        <LineBreak/>
+                        
                         consectetur adipiscing elit 
                         <LineBreak/>
                         sed tempor incididunt ut
-                        <LineBreak/>
+                        
                         laboret dolore magna ut
                         <LineBreak/>
+                        
                         consequat siad esqudiat dolo
                     </TextBlock>
                 </StackPanel>
-                
+
             </StackPanel>
             <!--2Дизайн-->
             <StackPanel Grid.Row="2" Grid.Column="2"  >
@@ -102,17 +103,18 @@
                                FontSize="12"
                                FontFamily="Segoe UI Light">
                         Lorem ipsum dolor sit amet
-                        <LineBreak/>
+                        
                         consectetur adipiscing elit 
                         <LineBreak/>
                         sed tempor incididunt ut
-                        <LineBreak/>
+                        
                         laboret dolore magna ut
                         <LineBreak/>
+                        
                         consequat siad esqudiat dolo
                     </TextBlock>
                 </StackPanel>
-                
+
             </StackPanel>
             <!--3Саппорт-->
             <StackPanel Grid.Row="2" Grid.Column="3">
@@ -122,13 +124,14 @@
                     </TextBlock>
                     <TextBlock Margin="0 15 0 0" Foreground="#a6a7aa" FontSize="12" FontFamily="Segoe UI Light">
                         Lorem ipsum dolor sit amet
-                        <LineBreak/>
+                        
                         consectetur adipiscing elit 
                         <LineBreak/>
                         sed tempor incididunt ut
-                        <LineBreak/>
+                        
                         laboret dolore magna ut
                         <LineBreak/>
+                        
                         consequat siad esqudiat dolo
                     </TextBlock>
                 </StackPanel>
@@ -146,34 +149,36 @@
             <StackPanel Grid.Row="3"
                         Grid.Column="1"
                         Grid.ColumnSpan="3">
-                <TextBlock FontSize="26"
+                <TextBlock Margin="0 20 0 0" FontSize="26"
                                Background="White"
                                Foreground="#515769"
                                FontFamily="Segoe UI Semibold">
                         Our Clients
-                    </TextBlock>
-                    <TextBlock Margin="0 15 0 0"
+                </TextBlock>
+                <TextBlock Margin="0 15 0 0"
                                Foreground="#a6a7aa"
                                FontSize="11"
                                FontFamily="Segoe UI Light">
                         Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut 
                         <LineBreak/>
                         laboret dolore magna aliqua enim minim veniam exercitation
-                    </TextBlock>
-                    <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-                    <Image Source="img/client/01.png" Margin="0 0 10 0" Height="200" Width="120"></Image>
-                    <Image Source="img/client/02.png" Margin="0 0 10 0" Height="190" Width="120"></Image>
-                    <Image Source="img/client/06.png" Margin="0 0 10 0" Height="190" Width="120"></Image>
-                    <Image Source="img/client/04.png" Margin="0 0 10 0" Height="190" Width="120"></Image>
-                    <Image Source="img/client/05.png"  Margin="0 0 10 0" Height="190" Width="120"></Image>
-                     </StackPanel>
+                </TextBlock>
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                    <Image Source="img/client/01.png" Margin="0 0 10 0" Height="200" Width="190"></Image>
+                    <Image Source="img/client/02.png" Margin="0 0 10 0" Height="190" Width="190"></Image>
+                    <Image Source="img/client/06.png" Margin="0 0 10 0" Height="190" Width="190"></Image>
+                    <Image Source="img/client/04.png" Margin="0 0 10 0" Height="190" Width="190"></Image>
+                    <Image Source="img/client/05.png"  Margin="0 0 10 0" Height="190" Width="190"></Image>
+                    <Image Source="img/client/03.png"  Margin="0 0 10 0" Height="190" Width="190"></Image>
+                </StackPanel>
             </StackPanel>
             <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5">
                 <Border Background="#FFFAFAFA" BorderBrush="#FFFBFBFA">
-                    </Border>
+                </Border>
             </Grid>
             <StackPanel Grid.Row="4"  Grid.Column="1" Grid.ColumnSpan="3">
-                <TextBlock FontFamily="Segoe UI Semibold"
+                <TextBlock Margin="0 25 0 0"
+                    FontFamily="Segoe UI Semibold"
                            FontSize="26"
                            Background="#FFFAFAFA"
                            Foreground="#515769">
@@ -188,11 +193,50 @@
                         laboret dolore magna aliqua enim minim veniam exercitation
                 </TextBlock>
             </StackPanel>
-        
-        
-        
+            <StackPanel 
+                Grid.Row="4" 
+                Grid.Column="1" 
+                Grid.ColumnSpan="2" 
+                Orientation="Horizontal" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Center"
+                Margin="0 0 0 300">
+                <StackPanel 
+                    Orientation="Vertical" >
+                    <Image 
+                        Source="img\dva.jpg"  
+                        Height="250" 
+                        Width="500"/>
+                    <Grid>
+                        <Image 
+                            Source="img\mujik.jpg"  
+                            HorizontalAlignment="Left" 
+                            Height="190" 
+                            Width="250"/>
+                        <Image 
+                            Source="img\work3.jpg"   
+                            HorizontalAlignment="Right" 
+                            Height="190" 
+                            Width="250"/>
+                    </Grid>
+                </StackPanel>
+                <StackPanel >
+                    <Image 
+                        Source="img\work (1).jpg"  
+                        HorizontalAlignment="Left" 
+                        Height="250" 
+                        Width="250"/>
+                    <Image 
+                        Source="img\stol.jpg"  
+                        HorizontalAlignment="Right" 
+                        Height="190" 
+                        Width="250"/>
+                </StackPanel>
+            </StackPanel>
+
+
         </Grid>
-        
+
     </ScrollViewer>
 
 </Window>
