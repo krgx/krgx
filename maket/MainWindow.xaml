@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:maket"
         mc:Ignorable="d"
-        Title="MainWindow" Height="2484.824" Width="1920">
+        Title="MainWindow" Height="3200.824" Width="1920">
     <ScrollViewer>
         <Grid ShowGridLines="False" >
             <Grid.RowDefinitions>
@@ -13,10 +13,15 @@
                 <RowDefinition Height="483"></RowDefinition>
                 <RowDefinition Height="216"></RowDefinition>
                 <RowDefinition Height="300"></RowDefinition>
-                <RowDefinition Height="1030"></RowDefinition>
+                <RowDefinition Height="600"></RowDefinition>
+                <RowDefinition Height="400"></RowDefinition>
+                <RowDefinition Height="600"></RowDefinition>
+                <RowDefinition Height="500"></RowDefinition>
+
+
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="250"></ColumnDefinition>
                 <ColumnDefinition Width="3*"></ColumnDefinition>
                 <ColumnDefinition Width="3*"></ColumnDefinition>
                 <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -28,32 +33,52 @@
                    HorizontalAlignment="Left" VerticalAlignment="Center"  Width="64" Height="16" >
                 <Image Source="img/logo.png" Width="64"  />
             </StackPanel>
+            
             <!--Навигация-->
             <StackPanel Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" 
                     Orientation="Horizontal" HorizontalAlignment="Right" Width="202">
-                <Button 
-                        Background="Transparent" 
-                    FontFamily="Segoe UI"
-                        FontSize="13px" 
-                    Padding="20px" Content="HOME" 
-                    FontWeight="Bold"></Button>
-                <Button 
-                        Background="Transparent"
-                    FontFamily="Segoe UI "
-                        FontSize="13px"
-                    Padding="20px" Content="ABOUT"
-                    FontWeight="Bold"></Button>
-                <Button 
-                        Background="Transparent"
-                    FontFamily="Segoe UI"
-                        FontSize="13px" Padding="20px" 
-                    Content="WORK" FontWeight="Bold"></Button>
-                <Button  
-                        Background="Transparent"
-                    FontFamily="Segoe UI"
-                        FontSize="13px" 
-                     Content="CONTACT" FontWeight="Bold"/>
+                <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                    <TextBlock                                        
+                                       Padding="4"
+                                       Text="Home"
+                                       FontSize="13px" 
+                                       FontWeight="Medium" 
+                                       Margin="0,0,4,0" />
+                </Button>
+                <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                    <TextBlock                                        
+                                       Padding="4"
+                                       Text="About"
+                                       FontSize="13px" 
+                                       FontWeight="Medium" 
+                                       Margin="0,0,4,0" />
+                </Button>
+                <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                    <TextBlock                                        
+                                       Padding="4"
+                                       Text="Work"
+                                       FontSize="13px" 
+                                       FontWeight="Medium" 
+                                       Margin="0,0,4,0" />
+                </Button>
+                <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                    <TextBlock                                        
+                                       Padding="4"
+                                       Text="Contact"
+                                       FontSize="13px" 
+                                       FontWeight="Medium" 
+                                       Margin="0,0,4,0" />
+                </Button>
             </StackPanel>
+            
             <StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Background="#FFFAFAFA"/>
             <!--Картинки бомба-->
             <StackPanel  Grid.Row="1" Grid.Column="1" 
@@ -89,6 +114,7 @@
                 </StackPanel>
 
             </StackPanel>
+            
             <!--2Дизайн-->
             <StackPanel Grid.Row="2" Grid.Column="2"  >
                 <StackPanel Orientation="Vertical" >
@@ -116,6 +142,7 @@
                 </StackPanel>
 
             </StackPanel>
+            
             <!--3Саппорт-->
             <StackPanel Grid.Row="2" Grid.Column="3">
                 <StackPanel Orientation="Vertical" >
@@ -136,6 +163,9 @@
                     </TextBlock>
                 </StackPanel>
             </StackPanel>
+            
+            
+            <!--ЗАЛИВКА ФОНА С ВСТУПИТЕЛЬНЫМИ КАРТИНКАМИ-->
             <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5">
                 <Border Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1"/>
             </Grid>
@@ -163,7 +193,7 @@
                         <LineBreak/>
                         laboret dolore magna aliqua enim minim veniam exercitation
                 </TextBlock>
-                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                <StackPanel HorizontalAlignment="Left" Margin="170 0 0 0" Orientation="Horizontal">
                     <Image Source="img/client/01.png" Margin="0 0 10 0" Height="200" Width="190"></Image>
                     <Image Source="img/client/02.png" Margin="0 0 10 0" Height="190" Width="190"></Image>
                     <Image Source="img/client/06.png" Margin="0 0 10 0" Height="190" Width="190"></Image>
@@ -172,10 +202,16 @@
                     <Image Source="img/client/03.png"  Margin="0 0 10 0" Height="190" Width="190"></Image>
                 </StackPanel>
             </StackPanel>
+            
+            
+            <!--РАЗМЕТКА ВСТУП.КАРТИНОК ОТ КЛИЕНТОВ-->
             <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5">
                 <Border Background="#FFFAFAFA" BorderBrush="#FFFBFBFA">
                 </Border>
             </Grid>
+            
+            
+            <!--WORK-->
             <StackPanel Grid.Row="4"  Grid.Column="1" Grid.ColumnSpan="3">
                 <TextBlock Margin="0 25 0 0"
                     FontFamily="Segoe UI Semibold"
@@ -193,14 +229,17 @@
                         laboret dolore magna aliqua enim minim veniam exercitation
                 </TextBlock>
             </StackPanel>
+            
+            
+            <!--КАРТИНКИ ДЛЯ WORK-->
             <StackPanel 
                 Grid.Row="4" 
                 Grid.Column="1" 
                 Grid.ColumnSpan="2" 
                 Orientation="Horizontal" 
                 HorizontalAlignment="Left" 
-                VerticalAlignment="Center"
-                Margin="0 0 0 300">
+                VerticalAlignment="Bottom"
+                Margin="0 0 0 0">
                 <StackPanel 
                     Orientation="Vertical" >
                     <Image 
@@ -232,7 +271,318 @@
                         Height="190" 
                         Width="250"/>
                 </StackPanel>
+
             </StackPanel>
+            
+            
+            <!--CUSTOMER REVIEWS-->
+            <StackPanel Grid.Row="5" Grid.Column="1" 
+                        Grid.ColumnSpan="3" 
+                        Grid.RowSpan="1"
+                        Orientation="Vertical"
+                        VerticalAlignment="Bottom" 
+                        HorizontalAlignment="Left"
+                        Margin="0 0 0 140" >
+                <TextBlock 
+                    FontFamily="Segoe UI Semibold"
+                           FontSize="26"
+                           Background="#FFFAFAFA"
+                           Foreground="#515769">
+                    Customer Reviews
+                </TextBlock>
+                <TextBlock Margin="0 15 0 0"
+                               Foreground="#a6a7aa"
+                               FontSize="11"
+                               FontFamily="Segoe UI Light">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur <LineBreak/>
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<LineBreak/>
+                </TextBlock>
+                <TextBlock>
+
+                </TextBlock>
+                <TextBlock 
+                               Foreground="#a6a7aa"
+                               FontSize="11"
+                               FontFamily="Segoe UI Light">
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <LineBreak/>
+                   consequat.
+                </TextBlock>
+                <TextBlock FontSize="14" Foreground="#81848F" Margin="0 15 0 0" FontFamily="Segoe UI Black">
+                    Alex Clarson,Metronic Customer
+                </TextBlock>
+            </StackPanel>
+            
+            
+            <!--БЕКГРАУНД MEET THE TEAM-->
+            <StackPanel Background="#FFFAFAFA"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="5"
+                        Grid.Row="6"/>
+            
+            <!--MEET THE TEAM-->
+            <StackPanel Grid.Row="6"
+                        Grid.Column="1" 
+                        Grid.ColumnSpan="4"
+                        Orientation="Horizontal" >
+                              
+                
+
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center" Margin="0 0 0 0">
+                        <StackPanel Height="90" Width="386"
+                                    VerticalAlignment="Top"
+                                    HorizontalAlignment="Left">
+                            <TextBlock Margin="0 0 0 0"
+                    FontFamily="Segoe UI Semibold"
+                           FontSize="26"
+                           Background="#FFFAFAFA"
+                           Foreground="#515769">
+                    Meet the team
+                            </TextBlock>
+                            <TextBlock Margin="0 15 0 0"
+                               Foreground="#a6a7aa"
+                               FontSize="11"
+                               FontFamily="Segoe UI Light">
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut 
+                        <LineBreak/>
+                        laboret dolore magna aliqua enim minim veniam exercitation
+                            </TextBlock>
+                        </StackPanel>
+                        
+                            <StackPanel  HorizontalAlignment="Left"
+                                 Margin="-387,100,0,40" VerticalAlignment="Center" Height="463"  >
+                        <Image Source="img/ea/01.jpg" Width="330" Height="366"></Image>
+                        <TextBlock Margin="0 15 0 0" FontSize="18" Background="#FFFAFAFA"
+                           Foreground="#515769" FontFamily="Segoe UI Semilight" >
+                        Alicia Keys
+                        </TextBlock>
+                        <TextBlock Margin="0 10 0 0"                                Foreground="#a6a7aa"
+                               FontSize="11"
+                               FontFamily="Segoe UI Light">
+                        Lorem ipsum dolor sit amet
+                        consectetur adipiscing elit 
+                        <LineBreak/>
+                        sed tempor incididunt ut
+                        laboret dolore magna ut
+                        <LineBreak/>
+                        
+                        consequat siad esqudiat dolo
+                        </TextBlock>
+                    </StackPanel>
+
+                    <StackPanel  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="-55 0 0 0" >
+
+                        <StackPanel VerticalAlignment="Center"
+                                HorizontalAlignment="Left"
+                                Margin="0 55 0 0"  >
+                            <Image Source="img/ea/02.jpg"
+                               Width="330" 
+                               Height="366"></Image>
+                            <TextBlock Margin="0 15 0 0" 
+                                   FontSize="18"
+                                   Background="#FFFAFAFA"
+                           Foreground="#515769" FontFamily="Segoe UI Semilight" >
+                        James Milner
+                            </TextBlock>
+                            <TextBlock Margin="0 10 0 0"                                Foreground="#a6a7aa"
+                               FontSize="11"
+                               FontFamily="Segoe UI Light">
+                        Lorem ipsum dolor sit amet
+                        consectetur adipiscing elit 
+                        <LineBreak/>
+                        sed tempor incididunt ut
+                        laboret dolore magna ut
+                        <LineBreak/>
+                        
+                        consequat siad esqudiat dolo
+                            </TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel  HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0 0 0 0" >
+
+                        <StackPanel HorizontalAlignment="Left" Margin="0 55 10 0"  >
+                            <Image Source="img/ea/03.jpg" Width="330" Height="366"></Image>
+                            <TextBlock Margin="0 15 0 0" FontSize="18" Background="#FFFAFAFA"
+                           Foreground="#515769" FontFamily="Segoe UI Semilight" >
+                        Scarlet Johanson
+                            </TextBlock>
+                            <TextBlock Margin="0 10 0 0"                                Foreground="#a6a7aa"
+                               FontSize="11"
+                               FontFamily="Segoe UI Light">
+                        Lorem ipsum dolor sit amet
+                        consectetur adipiscing elit 
+                        <LineBreak/>
+                        sed tempor incididunt ut
+                        laboret dolore magna ut
+                        <LineBreak/>
+                        
+                        consequat siad esqudiat dolo
+                            </TextBlock>
+                        </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                
+                
+                
+                
+            </StackPanel>
+            
+            <!--ПОЛЕЗНЫЕ КНОПКИ-->
+            <Grid
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2" Margin="0,0,0,124"                   
+                    >
+                <StackPanel HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Orientation="Vertical"
+                            Margin="0 0 0 130"
+                                >
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                        <TextBlock 
+                                       Padding="10"
+                                       Text="Home"
+                                       FontSize="15px" 
+                                       FontWeight="Medium" 
+                                       Margin="0,0,31,0" />
+                    </Button>
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                        <TextBlock 
+                                       Padding="10" 
+                                       Text="About"
+                                       FontSize="15"
+                                       FontWeight="Medium" 
+                                       Margin="0,0,31,0" />
+                    </Button>
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+
+                        <TextBlock 
+                                       Padding="10"
+                                       Text="Work"
+                                       FontSize="15" FontWeight="Medium" 
+                                       Margin="0,0,41,0"/>
+                    </Button>
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+
+                        <TextBlock 
+                                       Padding="10"
+                                       Text="Contact"
+                                       FontSize="15" FontWeight="Medium" 
+                                       Margin="0,0,25,0"/>
+                    </Button>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Orientation="Vertical"
+                                Margin="0 0 600 130"
+                                >
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                        <TextBlock 
+                                       Padding="10"
+                                       Text="Twitter"
+                                       FontSize="15px" 
+                                       FontWeight="Medium" 
+                                       Margin="0,0,40,0" />
+                    </Button>
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                        <TextBlock 
+                                       Padding="10" 
+                                       Text="Facebook"
+                                       FontSize="15"
+                                       FontWeight="Medium" 
+                                       Margin="0,0,21,0" />
+                    </Button>
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+
+                        <TextBlock 
+                                       Padding="10"
+                                       Text="Instagram"
+                                       FontSize="15" FontWeight="Medium" 
+                                       Margin="0,0,15,0"/>
+                    </Button>
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+
+                        <TextBlock 
+                                       Padding="10"
+                                       Text="YouTube"
+                                       FontSize="15" FontWeight="Medium" 
+                                       Margin="0,0,25,0"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+            <Grid
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2" Margin="0,0,0,124"                
+                    >
+                <StackPanel HorizontalAlignment="Right"
+                                VerticalAlignment="Center"
+                                Margin="0 0 460 150"                               
+                                Orientation="Vertical" Height="138" 
+                                >
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                        <TextBlock                                        
+                                       Padding="10"
+                                       Text="Subscribe to Our Newsletter"
+                                       FontSize="15px" 
+                                       FontWeight="Medium" 
+                                       Margin="0,0,16,0" />
+                    </Button>
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                        <TextBlock 
+                                       Padding="10" 
+                                       Text="Privacy Policy"
+                                       FontSize="15"
+                                       FontWeight="Medium" 
+                                       Margin="0,0,114,0" />
+                    </Button>
+                    <Button Style="{StaticResource MyButtonStyle}" 
+                                BorderBrush="Transparent"
+                                Background="Transparent">
+                        <TextBlock 
+                                       Padding="10"
+                                       Text="Terms and Conditions"
+                                       FontSize="15" FontWeight="Medium" 
+                                       Margin="0,0,59,0"/>
+                    </Button>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1"
+                    Margin="0 0 0 100"
+                   HorizontalAlignment="Left" VerticalAlignment="Bottom"  Width="64" Height="16" >
+                    <Image Source="img/logo.png" Width="64"  />
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Right" Margin="0 0 0 100" VerticalAlignment="Bottom">
+                    <TextBlock FontSize="14" FontFamily="Segoe UI Semilight">
+                        Acidus Theme Powered by: KRGXEE
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+            
+        <!--ОТМЕТКА ДЛЯ РАЗДЕЛЕНИЯ ПОЛЕЗНЫХ КНОПОК И ФУТЕРА-->
+            <Grid Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="5" Margin="0,0,0,260">
+                <Border Background="Transparent" BorderBrush="Gray" BorderThickness="0,0,0,1" Margin="0,0,0,10"/>
+            </Grid>
 
 
         </Grid>
